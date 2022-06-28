@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -9,7 +10,7 @@ body{
 .main{
     background-color: #A2C5AC;
     border: 3px solid #878E99;
-    border-radius: 3px;
+    border-radius: 10px;
     width: 50vw;
     height: 20vw;
 
@@ -26,6 +27,7 @@ body{
     height: 15vw;
 }
 
+
 button{
     position: absolute;
     border: 1px solid #878E99;
@@ -34,6 +36,10 @@ button{
     margin: 10px;
     transition: 0.3s;
 }
+.main button{
+    width: 30%;
+    height: 2vw;
+}
 button:hover{
     background-color: #92A2A6;
 }
@@ -41,6 +47,7 @@ button:active{
     transform: translateY(2px);
     background-color: #878E99;
 }
+
 .startBtn{
     bottom: 0;
     left: 0;
@@ -61,13 +68,16 @@ button:active{
 
     background-color: #D3D5D4;
     height: 5vw;
+    width: 90%;
+    left: 5%;
     top: 4vw;
 
+    background-color: #D3D5D4;
     border: 1px solid #878E99;
     border-radius: 10px;
 }
 
-
+/* === Social Media Cards CSS === */
 
 .discordCard{
     position: absolute;
@@ -119,4 +129,50 @@ button:active{
   }
   .gitHubCard a{
     color: white;
+  }
+
+  /* === Historic CSS === */
+  #historicMain{
+    width: 50vw;
+    height: 20vw;
+
+    background-color: #D3D5D4;
+    border: 3px solid #878E99;
+    border-radius: 10px;
+
+    margin-top: 40px;
+
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .markDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .markDiv button{
+    position: relative;
+    border: 1px solid #878E99;
+    border-radius: 10px;
+    background-color: #9DB5B2;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  .resetMarkBtn{
+    position: fixed;
+    border: 1px solid #878E99;
+    border-radius: 10px;
+    background-color: #9DB5B2;
+    margin: 10px;
+    transition: 0.3s;
+  }
+
+  .markDivDelete{
+    animation-name: delete;
+    animation-duration: 0.3s;
+  }
+  @keyframes delete {
+    from {opacity: 100%}
+    to {opacity: 0%}
   }
