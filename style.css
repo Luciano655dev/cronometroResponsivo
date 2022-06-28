@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #BBCDC0;
+}
+
+.main{
+    background-color: #A2C5AC;
+    border: 3px solid #878E99;
+    border-radius: 3px;
+    width: 50vw;
+    height: 20vw;
+
+    margin-top: 40px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 50vw;
+    height: 15vw;
+}
+
+button{
+    position: absolute;
+    border: 1px solid #878E99;
+    border-radius: 10px;
+    background-color: #9DB5B2;
+    margin: 10px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #92A2A6;
+}
+button:active{
+    transform: translateY(2px);
+    background-color: #878E99;
+}
+.startBtn{
+    bottom: 0;
+    left: 0;
+}
+#pauseBtn{
+    bottom: 0;
+}
+.stopBtn{
+    bottom: 0;
+    right: 0;
+}
+
+.timerContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #D3D5D4;
+    height: 5vw;
+    top: 4vw;
+
+    border: 1px solid #878E99;
+    border-radius: 10px;
+}
+
+
+
+.discordCard{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+
+    width: 200px;
+    height: 50px;
+    font-size: large;
+
+    background-color: #5865f2;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .discordCard a{
+    color: white;
+  }
+  .twitterCard{
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    margin-bottom: 10px;
+
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    
+    background-color: #1DA1F2;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .twitterCard a{
+    color: white;
+  }
+  .gitHubCard{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .gitHubCard a{
+    color: white;
+  }
